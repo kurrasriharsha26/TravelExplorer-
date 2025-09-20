@@ -1,0 +1,335 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #222;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+/* Auth and Signup Container */
+.auth-container {
+  max-width: 360px;
+  margin: 8vh auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.auth-container input[type=text],
+.auth-container input[type=email],
+.auth-container input[type=password] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.auth-container label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  user-select: none;
+  text-align: left;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #f67280;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+  background: #d65565;
+}
+
+.auth-container p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.auth-container p a {
+  color: #f67280;
+  text-decoration: none;
+}
+
+.auth-container p a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: #f67280;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  user-select: none;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover, .navbar ul li.active a {
+  background: rgba(255,255,255,0.3);
+}
+
+.navbar ul li button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Greeting & Search in Dashboard */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.greeting {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.greeting h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+  color: #f67280;
+}
+
+.greeting p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.search-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#destination-input {
+  width: 60%;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  border: 2px solid #f67280;
+  border-radius: 30px 0 0 30px;
+  outline: none;
+  max-width: 500px;
+}
+
+#explore-btn {
+  border: none;
+  background: #f67280;
+  color: white;
+  padding: 0.65rem 1.8rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#explore-btn:hover {
+  background: #d65565;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Individual card styling */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.city-name {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+  color: #f67280;
+}
+
+.temperature {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.weather-desc {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: #355c7d;
+}
+
+.more-link {
+  font-weight: 600;
+  color: #f67280;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.more-link:hover {
+  color: #d65565;
+}
+
+.profile-main {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.profile-card {
+  background-color: #ffffffcc;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  padding: 2rem 1.5rem;
+  border-radius: 14px;
+  transition: box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.25);
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #f67280;
+  margin-bottom: 1rem;
+}
+
+#profile-view h2 {
+  font-size: 2rem;
+  color: #f67280;
+  margin-bottom: 0.25rem;
+}
+
+#profile-view p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Editable form hidden by default */
+.hidden {
+  display: none;
+}
+
+#profile-edit input {
+  width: 90%;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1.7px solid #f67280;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+#profile-edit input:focus {
+  border-color: #d65565;
+}
+
+.profile-edit-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#profile-edit button {
+  background-color: #f67280;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#profile-edit button:hover {
+  background-color: #d65565;
+}

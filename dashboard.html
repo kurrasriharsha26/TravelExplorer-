@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel Explorer Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Travel Explorer</div>
+    <ul>
+      <li class="active"><a href="dashboard.html">Home</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#" id="logout">Logout</a></li>
+      <li><button id="theme-toggle">Dark Mode</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="greeting">
+      <h1 id="greeting-msg">Good day!</h1>
+      <p>Welcome to your Travel Explorer dashboard.</p>
+    </section>
+
+    <section class="search-section">
+      <input type="text" id="destination-input" placeholder="Search your next destination..." />
+      <button id="explore-btn">Explore</button>
+    </section>
+
+    <section id="results-section" class="cards-container"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
