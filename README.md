@@ -100,6 +100,8 @@ Display weather forecast for the week instead of only current weather.
 
 Add favorites to save cities for later trips.
 
+Adding AI suggestions for better support.
+
 **License**
 
 This project is open-source and free to use.
